@@ -66,11 +66,35 @@ public class AddressBook {
 			System.out.println("Contact list not found");
 		}
 	}
+	
+	public void deleteContact() {
+		
+		String fname;
+		System.out.println("Enter the first name to delete a contact");
+		fname = scanner.next();
+		if(fname.equals(contact.getFirstName()))
+			{
+				System.out.println("Contact Deleted");
+				contact.setFirstName(null);
+				contact.setLastName(null);
+				contact.setAddress(null);
+				contact.setCity(null);
+				contact.setState(null);
+				contact.setZip(null);
+				contact.setPhoneNo(null);
+				contact.setEmailId(null);
+			}else
+				{
+				System.out.print("name not found");
+				}
+	}
 	public static void main(String[] args) {
 		AddressBook addressBook = new AddressBook();
 		addressBook.addContact();
 		addressBook.displayContacts();
-		addressBook.editContact();
+		//addressBook.editContact();
+		//addressBook.displayContacts();
+		addressBook.deleteContact();
 		addressBook.displayContacts();
 	}
 
