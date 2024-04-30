@@ -8,13 +8,13 @@ public class Contact {
 	private String city;
 	private String state;
 	private String zip;
-	private String phonNo;
+	private String phoneNo;
 	private String emailId;
 	
 	public void setFirstName(String firstName ) {
 		this.firstName = firstName;
 	}
-	public void setlastName(String lastName ) {
+	public void setLastName(String lastName ) {
 		this.lastName = lastName;
 	}
 	public void setAddress(String address ) {
@@ -29,8 +29,8 @@ public class Contact {
 	public void setZip(String zip ) {
 		this.zip = zip;
 	}
-	public void setPhoneNo(String phonNo ) {
-		this.phonNo = phonNo;
+	public void setPhoneNo(String phoneNo ) {
+		this.phoneNo = phoneNo;
 	}
 	public void setEmailId(String emailId ) {
 		this.emailId = emailId;
@@ -54,8 +54,8 @@ public class Contact {
 	public String getZip() {
 		return zip;
 	}
-	public String getPhonNo() {
-		return phonNo;
+	public String getPhoneNo() {
+		return phoneNo;
 	}
 	public String getEmailId() {
 		return emailId;
