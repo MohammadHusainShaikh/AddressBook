@@ -60,4 +60,17 @@ public class Contact {
 	public String getEmailId() {
 		return emailId;
 	}
-}
+	
+	  public String toString() {
+	        return "Contact{" +
+	                "firstName='" + firstName + '\'' +
+	                ", lastName='" + lastName + '\'' +
+	                ", address='" + address + '\'' +
+	                ", city='" + city + '\'' +
+	                ", state='" + state + '\'' +
+	                ", zip='" + zip + '\'' +
+	                ", phoneNo='" + phoneNo + '\'' +
+	                ", email='" + emailId + '\'' +
+	                '}';
+	  }              
+ }
