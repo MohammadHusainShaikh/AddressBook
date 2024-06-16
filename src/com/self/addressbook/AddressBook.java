@@ -94,7 +94,7 @@ public class AddressBook {
 			}		
 		}
 	}
-		public static void main(String[] args) {
+		public void contactMenu() {
 		AddressBook addressBook = new AddressBook();
 		int choice=0;
 		do {
